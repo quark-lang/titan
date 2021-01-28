@@ -1,0 +1,17 @@
+{
+  (let command (index std:args 0))
+  (if (= command "install") {
+    (import "commands/install.qrk")
+    (return none)
+  })
+
+  (if (= command "init") {
+    (import "commands/init.qrk")
+    (return none)
+  })
+
+  (if (= command none) {
+    (import "commands/help.qrk")
+    (return none)
+  })
+}
