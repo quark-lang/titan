@@ -1,0 +1,14 @@
+{
+  # Printing headline
+  (print (white "Titan package mangager"))
+  (print (gray "The Quark package manager.\n"))
+  (print "Website:" "https://quark-lang.dev/")
+  (print "Repository:" "https://github/quark-lang/titan/\n")
+
+  # Printing commands
+  (print (bold "COMMANDS:"))
+  (print "  " "- install" "    " (gray "Install a Quark package"))
+  (print "  " "- init   " "    " (gray "Initialize folder to Titan template"))
+
+  (return none)
+}
