@@ -1,0 +1,6 @@
+{
+  (let package (index std:args 1))
+  (if (= package none) (return (print "You must precise a package to install!")))
+  (let package_name (fs:basename package))
+  (download package (fs:join "modules" package_name))
+}
